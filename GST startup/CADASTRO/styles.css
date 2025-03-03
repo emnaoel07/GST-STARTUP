@@ -1,0 +1,187 @@
+/* Reset global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fundo com gradiente azul escuro */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #002244, #004488);
+}
+
+/* Container para centralizar tudo */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+/* Caixa de login com efeito neon */
+.login-box {
+    background: rgba(0, 0, 50, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 150, 255, 0.7);
+    text-align: center;
+    width: 320px;
+    backdrop-filter: blur(10px);
+    position: relative;
+}
+
+/* Ícone de perfil no topo */
+.avatar {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    background: rgba(0, 150, 255, 0.2);
+    border: 2px solid rgba(0, 150, 255, 0.5);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.avatar img {
+    width: 60px;
+    height: 60px;
+    opacity: 0.8;
+    border-radius: 50%;
+}
+
+/* Estilizando os campos de entrada */
+.input-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    outline: none;
+    font-size: 16px;
+}
+
+.input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Mensagem de erro */
+.error-message {
+    color: red;
+    font-size: 12px;
+    position: absolute;
+    bottom: -16px;
+    left: 0;
+}
+
+/* Links pequenos */
+.links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.links a {
+    color: #00aaff;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Botão de login */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #0077ff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+button:hover {
+    background: #0055cc;
+    box-shadow: 0 0 10px rgba(0, 150, 255, 0.8);
+}
+
+/* Responsividade */
+@media (max-width: 400px) {
+    .login-box {
+        width: 90%;
+    }
+}
+/* LOGIN AREA */
+/* Botão de adicionar foto */
+.avatar {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.add-photo {
+    width: 60px;
+    height: 60px;
+    background: none;
+    border: 2px solid #00aaff;
+    color: #00aaff;
+    font-size: 24px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.add-photo:hover {
+    background: #00aaff;
+    color: white;
+}
+/* Campos de entrada */
+.input-group {
+    margin-bottom: 15px;
+}
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    outline: none;
+    font-size: 16px;
+}
+
+.input-group input::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Link para login */
+.login-link {
+    display: block;
+    color: #00aaff;
+    text-decoration: none;
+    margin-bottom: 15px;
+}
+
+.login-link:hover {
+    text-decoration: underline;
+}
+
